@@ -19,6 +19,8 @@ You should see something like this:
 	
 Where IMAGE_ID is the last number generated in the previous step, i.e. aa70a67d8567 for the image shown above.
 
+Make sure that the port 8080 is not in use, or choose another one if so.
+
 ### Possible error:
 
 You may see an error like this one:
