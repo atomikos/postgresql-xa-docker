@@ -7,10 +7,26 @@ This project generates a docker image with PostgreSQL and XA enabled.
 ### Build the image:
    
 		docker build -t atomikos/postgres:0.0.1 .docker build -t atomikos/postgres:0.0.1 .
+		
+You should see something like this:
+
+<p align="center"><img src="images/build-image.png" alt="build image"></p>
+
+
 ### Run the image:
       
-	docker run -d -p 5432:5432 --name pg -v $PWD/data:/var/lib/postgresql/data -e POSTGRES_PASSWORD=atomikos <IMAGE_ID>
- 
+	docker run -d -p 8080:5432 --name pg -v $PWD/data:/var/lib/postgresql/data -e POSTGRES_PASSWORD=atomikos <IMAGE_ID>
+	
+Where IMAGE_ID is the last number generated in the previous step, i.e. aa70a67d8567 for the image shown above.
+
+### Possible error:
+
+You may see an error like this one:
+
+<p align="center"><img src="images/already-in-use.png" alt="already in use"></p>
+
+See the troubleshooting section below for what to do.
+
 ## Testing
 
 Testing can be done with the pgAdmin application:
