@@ -21,7 +21,37 @@ Create (add) a new server to your admin tool, by right-clicking the *Servers* ic
 
 <p align="center"><img src="images/create-server-1.png" alt="create server 1"></p>
 
+#### Configure Server Name
 
+Set the name of the new server to, for instance, *docker*:
+
+<p align="center"><img src="images/create-server-2.png" alt="create server 2"></p>
+
+#### Configure Connection Parameters
+
+Use the following settings for the Connection tab:
+
+<p align="center"><img src="images/create-server-3.png" alt="create server 3"></p>
+
+NB: the password is *atomikos*
+
+### Open the Query Tool
+
+In the left tab, navigate to your *postgres* database instance, and right-click it to open a Query Tool window:
+
+<p align="center"><img src="images/query-tool.png" alt="query tool"></p>
+
+### Show All
+
+In the query tool, type
+
+	show all
+	
+then hit the flash icon at the top of the window:
+
+<p align="center"><img src="images/show-all.png" alt="show all"></p>
+
+You should see *max_prepared_transactions=100*.
  
 ## Troubleshooting
 
