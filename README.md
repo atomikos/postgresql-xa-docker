@@ -11,7 +11,7 @@ This project generates a docker image with PostgreSQL and XA enabled.
       
 	docker run -d -p 5432:5432 --name pg -v $PWD/data:/var/lib/postgresql/data -e POSTGRES_PASSWORD=atomikos <IMAGE_ID>
  
-##Testing
+## Testing
 
 Testing can be done with the pgAdmin application:
 
@@ -19,7 +19,7 @@ Testing can be done with the pgAdmin application:
 
 Create (add) a new server to your admin tool, by right-clicking the *Servers* icon in the left pane:
 
-<p align="center"><img src="images/create-server-1.png" width="360" height="270" alt="create server 1"></p>
+<p align="center"><img src="images/create-server-1.png" alt="create server 1"></p>
 
 
  
